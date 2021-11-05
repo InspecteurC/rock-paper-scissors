@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Rock Papers Scissors" id="logo">
+    <p id="score">SCORE <br><span id="scoreNum">0</span></p>
+  </header>
+
+  <div class="step">
+      
+      <div id="step0">
+      </div>
+      <div id="step1">
+        <img src="images/bg-triangle.svg" id="triangle">
+          <div class="icon step1 paperIcon"><div class="inner"><img src="images/icon-paper.svg" class="paper"></div></div>
+          <div class="icon step1 scissorsIcon"><div class="inner"><img src="images/icon-scissors.svg" class="scissors"></div></div>
+          <div class="icon step1 rockIcon"><div class="inner"><img src="images/icon-rock.svg" class="rock"></div></div>
+    </div>
+
+    <div id="step2" class="inactive">
+      <p class="step2-text"><span class="youPicked">YOU PICKED</span><span class="housePicked">THE HOUSE PICKED</span></p>
+      <div class="wrapper"><div class="icon step2"></div>
+        <div class="darkBlueCircle houseObject"></div></div>
+    </div>
+
+    <div id="step3" class="inactive">
+      <p class="step2-text"><span class="youPicked">YOU PICKED</span><span class="housePicked">THE HOUSE PICKED</span></p>
+        <div class="wrapper"><div class="icon step3"></div>
+        <div class="icon step3 houseObject"></div></div>
+    </div>
+
+    <div id="step4" class="inactive">
+      <p class="step2-text"><span class="youPicked">YOU PICKED</span><span class="housePicked">THE HOUSE PICKED</span></p>
+        <div class="icon step4"></div>
+
+        <div class="icon step4 houseObject"></div>
+      <div class="result"><p>YOU <span id="LoseOrWin"></span></p>
+      <button id="playAgain">PLAY AGAIN</button></div>
+    </div>
+  </div>
+
+  <footer>
+    <button id="rulesButton">RULES</button>
+    <div class="inactive" id="rules" style="opacity: 1;"><p id="rulesText"><span>RULES</span><button id="rulesButton2">X</button></p><img src="images/image-rules.svg" alt=""></div>
+  </footer>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Inspecteur_C</a>.
+  </div>-->
+  <script src="script.js"></script>
+</body>
+</html>

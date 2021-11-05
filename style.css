@@ -1,0 +1,245 @@
+body {
+    background: -webkit-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background:    -moz-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background:     -ms-radial-gradient( center, circle, hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    background:      -o-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background:         radial-gradient( circle, center, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+header {
+    overflow: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 40%;
+    margin: auto;
+    margin-top: 32px;
+    padding: 0.5em;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 12px;
+}
+#logo {
+    display: block;
+    float: left;
+    height: 80px;
+    width: auto;
+    margin: 12px;
+}
+div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#score{
+    display: block;
+    float: right;
+    height: 80%;
+
+    margin: 0;
+    padding: 12px 36px;
+    background-color: #FFF;
+    border-radius: 8px;
+    color: hsl(229, 64%, 46%);
+    font-size: 0.5em;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+#scoreNum {
+    color:hsl(229, 25%, 31%);
+    font-size: 4em;
+    text-align: center;
+}
+#triangle {
+    display: block;
+    height: auto;
+    width: 15%;
+    margin-top: 5em;
+}
+
+.icon img{
+    height:2.75em;
+    width: auto;
+}
+.step{
+    position: relative;
+}
+#rulesButton {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    background: transparent;
+    color: #CCC;
+    font-size: 0.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: #CCC solid 1px;
+    border-radius: 0.75em;
+    padding: 0.7em 2.1em
+}
+footer button:hover {
+    color: hsl(217, 16%, 45%);
+    border: hsl(217, 16%, 45%) solid 1px;
+}
+
+#rules {
+    display: block;
+    height: 66%;
+    width:30%;
+    margin:auto;
+    background: #FFF;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 42;
+    opacity: 1;
+}
+#rulesText {
+    position:relative;
+    width: 100%;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    color:hsl(229, 25%, 31%);
+}
+#rulesButton2 {
+    float: right;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    margin-right: 1em;
+}
+#rules  img {
+    display: block;
+    height: auto;
+    width:94%;
+    margin:3%;
+    padding:0;
+}
+.inactive {
+    display: none !important;
+}
+.icon {
+    position: absolute;
+
+    height: 6.5em;
+    width: 6.5em;
+    border-radius: 50%;
+}
+.inner {
+    background-color: #CCC;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border-top: #AAA solid 6px;
+}
+.step1.paperIcon {
+    top: 12%;
+    left:36%;
+}
+.paperIcon {
+    box-shadow: 0px 6px  hsl(230, 58%, 40%);
+    background: -webkit-linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+    background:    -moz-linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+    background:     -ms-linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+    background:      -o-linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+    background:         linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+}
+.step1.scissorsIcon {
+    top: 12%;
+    right:36%;
+}
+.scissorsIcon {
+    box-shadow: 0px 6px  hsl(39, 83%, 39%);
+    background: -webkit-linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+    background:    -moz-linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+    background:     -ms-linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+    background:      -o-linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+    background:         linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+}
+.step1.rockIcon {
+    bottom: 5%;
+    right:50%;
+    transform: translate(50%,50%);
+} 
+.rockIcon {
+    box-shadow: 0px 6px  hsl(349, 59%, 36%);
+    background: -webkit-linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+    background:    -moz-linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+    background:     -ms-linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+    background:      -o-linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+    background:         linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+}
+#step2, #step3 {
+    width: 40%;
+    height: auto;
+    display: table;
+}
+#step4 {
+    width: 60%;
+    height: auto;
+    display: table;
+}
+.step2-text {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1em;
+}
+.housePicked {
+    float: right;
+}
+
+.wrapper{
+    display:table-row;
+}
+.houseObject{
+    position: relative;
+    left: 30%;
+}
+#step4 .houseObject {
+    left: 37%;  
+}
+.darkBlueCircle {
+    width: 6.5em;
+    height: 6.5em;
+    border-radius: 50%;
+    background-color: hsl(237, 49%, 15%);
+}
+.result {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: 600;
+}
+p {
+    display: block;
+}
+#playAgain {
+    display: block;
+    width: 100%;
+    background-color: white;
+    color: hsl(229, 25%, 31%);
+    font-size: 0.25em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 0.25em 2em;
+    border-radius: 0.25em;
+    border: none;
+}
+#playAgain:hover {
+    color: hsl(349, 71%, 52%) 
+}
