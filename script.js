@@ -70,7 +70,7 @@ function loseOrWin(playerObject, houseObject) {
     if(playerObject=="rock" && houseObject=="scissors" || playerObject=="scissors" && houseObject=="paper"|| playerObject=="paper" && houseObject=="rock"){
         score++;
         document.getElementById('LoseOrWin').innerHTML = "WIN";
-    } else {
+        } else {
         score--;
         document.getElementById('LoseOrWin').innerHTML = "LOSE";
     };

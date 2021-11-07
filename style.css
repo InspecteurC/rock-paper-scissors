@@ -243,3 +243,10 @@ p {
 #playAgain:hover {
     color: hsl(349, 71%, 52%) 
 }
+.bright {
+    background: -webkit-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background:    -moz-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background:     -ms-radial-gradient( center, circle, hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    background:      -o-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background:         radial-gradient( circle, center, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
