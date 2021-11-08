@@ -244,9 +244,7 @@ p {
     color: hsl(349, 71%, 52%) 
 }
 .bright {
-    background: -webkit-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-    background:    -moz-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-    background:     -ms-radial-gradient( center, circle, hsl(214, 47%, 23%),hsl(237, 49%, 15%));
-    background:      -o-radial-gradient( center, circle, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-    background:         radial-gradient( circle, center, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    box-shadow: 0 0 0 2.5em rgba(255,255,255,0.075),
+                0 0 0 5em rgba(255,255,255,0.05),
+                0 0 0 7.5em rgba(255,255,255,0.025);
 }

@@ -70,9 +70,11 @@ function loseOrWin(playerObject, houseObject) {
     if(playerObject=="rock" && houseObject=="scissors" || playerObject=="scissors" && houseObject=="paper"|| playerObject=="paper" && houseObject=="rock"){
         score++;
         document.getElementById('LoseOrWin').innerHTML = "WIN";
+        document.getElementsByClassName('step4')[0].classList.add('bright');
         } else {
         score--;
         document.getElementById('LoseOrWin').innerHTML = "LOSE";
+        document.getElementsByClassName('step4')[1].classList.add('bright');
     };
     console.log("test");
 }
@@ -84,6 +86,7 @@ function playAgain(){
         Icon.classList.remove('rockIcon');
         Icon.classList.remove('scissorsIcon');
         Icon.classList.remove('paperIcon');
+        Icon.classList.remove('bright');
         console.log('cleared');
     });
     changeStep();
