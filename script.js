@@ -29,7 +29,7 @@ function changeStep() {
             Array.from(document.getElementsByClassName('icon')).forEach(function(Icon) {
                 Icon.removeEventListener('click', stepOne,true);
             });
-            setTimeout(() => stepTwo(), 3000);
+            setTimeout(() => stepTwo(), 2000);
             break;
         case 3:
             setTimeout(() => stepThree(), 3000);
