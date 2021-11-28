@@ -275,9 +275,7 @@ p {
         display: table;
     }
     
-    .icon {
-        float:left;
-    }
+
     .houseObject {
         float:right;
         right:0;
@@ -311,4 +309,30 @@ p {
         transform: translate(-50%,-50%);
         color: white;
     }
+}
+.playerpicked {
+    animation: apparition 0.5s;
+    -moz-animation: apparition 0.5s;
+    -webkit-animation: apparition 0.5s;
+    -o-animation: apparition 0.5s;
+}
+.housepicked {
+    animation: apparition 0.5s;
+    -moz-animation: apparition 0.5s;
+    -webkit-animation: apparition 0.5s;
+    -o-animation: apparition 0.5s;
+}
+.result {
+    animation: resultApparition 0.5s;
+    -moz-animation: resultApparition 0.5s;
+    -webkit-animation: resultApparition 0.5s;
+    -o-animation: resultApparition 0.5s;
+}
+@keyframes apparition {
+    0%{transform: scale(0.1, 0.1);}
+    100%{transform: scale(1, 1);}
+}
+@keyframes resultApparition {
+    0%{transform: scale(0.1, 0.1) translate(-50%,-50%);}
+    100%{transform: scale(1, 1) translate(-50%,-50%);}
 }
